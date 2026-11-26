@@ -1,0 +1,38 @@
+{
+  "config": {
+    "inicio": "2015-01-01",
+    "fin": "2025-12-31",
+    "inicio_premuestra_diaria": "2014-10-01",
+    "plazo_dias": 30,
+    "base_dias": 360,
+    "ventana_volatilidad_dias": 21,
+    "saldo_modo": "rezago_mensual_t1",
+    "saldo_definicion": "neto_total",
+    "indicadores_al_cierre": true,
+    "series_diarias": {
+      "tc_spot": "PD04638PD",
+      "tasa_mn": "PD04692MD",
+      "tasa_me": "PD04693MD"
+    },
+    "series_saldos": {
+      "saldo_compras": "PN09544TM",
+      "saldo_ventas": "PN09547TM",
+      "posicion_neta_forwards": "PN09550TM"
+    }
+  },
+  "filas": 144,
+  "metodo": "scraping_tabla_html",
+  "pagina_origen": "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN09544TM-PN09547TM-PN09550TM/html/2014-01/2025-12",
+  "enlace_descarga": null,
+  "original": "D:\\Alex Finanzas\\Cobertura_Cambiaria_2024200502H\\datos_crudos\\bcrp_saldos_pagina_original.html",
+  "unidad": "millones USD",
+  "transformaciones": "Fecha mensual normalizada; saldo bruto calculado como compras + ventas.",
+  "fecha_publicacion": "No aparece en la tabla HTML; no se infiere de la fecha de descarga.",
+  "versiones_historicas": "No identificadas; los valores podrían incluir revisiones posteriores.",
+  "columnas_oficiales": [
+    "Fecha",
+    "Forwards de monedas de las empresas bancarias con el público (millones US$) - Saldo de Forwards - Compras - Total",
+    "Forwards de monedas de las empresas bancarias con el público (millones US$) - Saldo de Forwards - Ventas - Total",
+    "Forwards de monedas de las empresas bancarias con el público (millones US$) - Saldo de Forwards - Saldo Neto - Total"
+  ]
+}

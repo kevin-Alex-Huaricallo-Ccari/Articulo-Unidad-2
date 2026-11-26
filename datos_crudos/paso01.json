@@ -1,0 +1,65 @@
+{
+  "config": {
+    "inicio": "2015-01-01",
+    "fin": "2025-12-31",
+    "inicio_premuestra_diaria": "2014-10-01",
+    "plazo_dias": 30,
+    "base_dias": 360,
+    "ventana_volatilidad_dias": 21,
+    "saldo_modo": "rezago_mensual_t1",
+    "saldo_definicion": "neto_total",
+    "indicadores_al_cierre": true,
+    "series_diarias": {
+      "tc_spot": "PD04638PD",
+      "tasa_mn": "PD04692MD",
+      "tasa_me": "PD04693MD"
+    },
+    "series_saldos": {
+      "saldo_compras": "PN09544TM",
+      "saldo_ventas": "PN09547TM",
+      "posicion_neta_forwards": "PN09550TM"
+    }
+  },
+  "metadatos": {
+    "title": "Tipo de cambio",
+    "series": [
+      {
+        "name": "Tipo de cambio - TC Interbancario (S/ por US$) - Venta",
+        "dec": "3"
+      },
+      {
+        "name": "Tasas de interés - Interbancaria, S/",
+        "dec": "2"
+      },
+      {
+        "name": "Tasas de interés - Interbancaria, US$",
+        "dec": "2"
+      }
+    ]
+  },
+  "filas": 2936,
+  "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD-PD04692MD-PD04693MD/json/2014-10-01/2025-12-31/esp",
+  "frecuencia": "diaria",
+  "inicio_premuestra": "2014-10-01",
+  "series": [
+    {
+      "variable": "tc_spot",
+      "codigo": "PD04638PD",
+      "nombre_oficial": "Tipo de cambio - TC Interbancario (S/ por US$) - Venta",
+      "unidad": "S/ por USD"
+    },
+    {
+      "variable": "tasa_mn",
+      "codigo": "PD04692MD",
+      "nombre_oficial": "Tasas de interés - Interbancaria, S/",
+      "unidad": "% anual"
+    },
+    {
+      "variable": "tasa_me",
+      "codigo": "PD04693MD",
+      "nombre_oficial": "Tasas de interés - Interbancaria, US$",
+      "unidad": "% anual"
+    }
+  ],
+  "fecha_descarga_utc": "2026-11-22T17:00:08.832531+00:00"
+}
