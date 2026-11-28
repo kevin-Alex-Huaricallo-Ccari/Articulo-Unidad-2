@@ -1,0 +1,111 @@
+{
+  "config": {
+    "inicio": "2015-01-01",
+    "fin": "2025-12-31",
+    "inicio_premuestra_diaria": "2014-10-01",
+    "plazo_dias": 30,
+    "base_dias": 360,
+    "ventana_volatilidad_dias": 21,
+    "saldo_modo": "rezago_mensual_t1",
+    "saldo_definicion": "neto_total",
+    "indicadores_al_cierre": true,
+    "series_diarias": {
+      "tc_spot": "PD04638PD",
+      "tasa_mn": "PD04692MD",
+      "tasa_me": "PD04693MD"
+    },
+    "series_saldos": {
+      "saldo_compras": "PN09544TM",
+      "saldo_ventas": "PN09547TM",
+      "posicion_neta_forwards": "PN09550TM"
+    }
+  },
+  "filas_diarias_crudas": 2936,
+  "filas_spot_procesadas": 2742,
+  "rango": [
+    "2015-01-05",
+    "2025-12-31"
+  ],
+  "periodo_solicitado": [
+    "2015-01-01",
+    "2025-12-31"
+  ],
+  "rango_premuestra_spot": [
+    "2014-10-01",
+    "2014-12-31"
+  ],
+  "filas_saldos_crudas": 144,
+  "filas_saldos_estudio": 132,
+  "ausentes_por_columna": {
+    "tc_spot": 0,
+    "tasa_mn": 5,
+    "tasa_me": 431,
+    "saldo_forwards": 0,
+    "tc_forward_teorico": 432,
+    "punto_swap_teorico": 432,
+    "volatilidad_spot": 0,
+    "antiguedad_meses_saldo": 0,
+    "saldo_t1_exacto": 0,
+    "retorno_log_diario": 0,
+    "n_retornos_ventana": 0
+  },
+  "duplicados_diarios": [],
+  "duplicados_mensuales": 0,
+  "meses_con_fecha_publicacion": 0,
+  "saldo_modo": "rezago_mensual_t1",
+  "saldo_definicion": "saldo neto oficial PN09550TM, millones USD",
+  "filas_sin_saldo": 0,
+  "filas_saldo_antiguedad_mayor_un_mes": 0,
+  "volatilidad": {
+    "ventana_retornos": 21,
+    "minimo_retornos": 21,
+    "ddof": 1,
+    "anualizacion": "sqrt(252)*100",
+    "unidad": "% anualizada",
+    "huecos": "retorno entre cotizaciones disponibles; sin imputación"
+  },
+  "ejecuciones": {
+    "01": {
+      "fecha_utc": "2026-11-22T17:00:08.832531+00:00",
+      "resultado": "correcto"
+    },
+    "02": {
+      "fecha_utc": "2026-11-22T17:00:10.608970+00:00",
+      "resultado": "correcto"
+    },
+    "03": {
+      "fecha_utc": "2026-11-22T17:00:11.156715+00:00",
+      "resultado": "correcto"
+    },
+    "04": {
+      "fecha_utc": "2026-11-22T17:01:36.832951+00:00",
+      "resultado": "correcto"
+    }
+  },
+  "datos_revisados": "Posibles: tabla histórica actual; versiones de publicación no reconstruidas.",
+  "linaje": {
+    "observadas": [
+      "tc_spot",
+      "tasa_mn",
+      "tasa_me",
+      "saldo_compras",
+      "saldo_ventas",
+      "posicion_neta_forwards"
+    ],
+    "agregadas": [
+      "saldo_bruto_calculado"
+    ],
+    "estimadas": [
+      "tc_forward_teorico",
+      "punto_swap_teorico",
+      "volatilidad_spot"
+    ]
+  },
+  "limitaciones": [
+    "Fechas históricas de publicación no disponibles en la tabla HTML.",
+    "La disponibilidad desde el primer día del mes siguiente es supuesta.",
+    "Las tasas interbancarias son proxies del plazo forward."
+  ],
+  "operaciones_excluidas_vencimiento_fuera_periodo": 17,
+  "operaciones_excluidas_sin_valoracion_dentro_periodo": 0
+}
